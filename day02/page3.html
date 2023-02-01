@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img[src $= jpg]{
+            border: 10px solid red;
+            width: 250px;
+            height: 250px;
+        }
+        img[src $= png]{
+            border: 20px dotted blue;
+            width: 250px;
+            height: 250px;
+        }
+        #d1>p{
+            background: gold;
+        }
+        #d2 p {
+            background: silver;
+        }
+        #d1{
+            background: yellow;
+            width: 250px;
+            height: 250px;
+        }
+        #d2{
+            background: pink;
+            width: 250px;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+     <!-- alt 사진 안보일때 글자 부가설명 -->
+    <img src="1.jpg" alt="과일">
+    <img src="2.png" alt="지도">
+
+    <hr/>
+    <!-- hr-가로줄 -->
+    <div id="d1">
+        <!-- p-문단 한줄 떨어짐 -->
+        <p>내가 좋아하는 음식</p>
+        <div>
+            <p>나는 한식을 좋아해요.</p>
+            <p>나는 분식을 좋아해요.</p>
+        </div>
+    </div>
+
+    <div id="d2">
+        <p>내가 싫어하는 음식</p>
+        <div>
+            <p>나는 중식을 싫어해요.</p>
+            <p>나는 일식을 싫어해요.</p>
+        </div>
+    </div>
+
+   
+</body>
+</html>
