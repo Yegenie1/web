@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // height = 187.7
+        // weight = 55
+        // result = height - weight
+        // alert("키에서 몸무게를 뺀 값은 " + result + "입니다")
+        //     height = prompt('당신의 키를 입력하세요.')
+        //     weight = prompt('당신의 몸무게를 입력하세요.')
+        //     //숫자로 바꾸어 줍시다.!! 부품이 필요!!int char
+        //     // result = parseInt(height) +parseInt(weight) //정수
+        //     result = parseFloat(height) +parseFloat(weight) //실수
+        //    // result = height - weight //문자 더하기 가능 문자 빼기 불가능
+        //     alert("키에서 몸무게를 뺀 값은 " + result + "입니다")
+        //3.3 = 1.1+ 2.2,3.0000003 보수로 -기능 구현 해야됨
+
+        row = prompt("가로를 입력하세요")
+        col = prompt("세로를 입력하세요")
+        area = parseFloat(row) * parseFloat(col)
+        alert("사각형의 넓이는 " + area.toFixed(1) + "입니다.")
+
+        coffee = prompt("커피 한잔가격을 입력하세요")
+        num = prompt("커피구매 갯수를 입력하세요")
+        result = parseInt(coffee) * parseInt(num)
+        alert("전체 결제 금액은 " + result + "원")
+
+        const APPLE = 2000 //변경 불가능한 값을 넣을때, 상수
+        const PEAR = 3000
+        applenum = 3
+        pearnum = 2
+        result2 = parseInt(APPLE) * parseInt(3) + parseInt(PEAR) * parseInt(pearnum)
+        alert("전체 결제 금액은 " + result2 + "원")
+
+        yes = 25
+        today = 10
+        aver = (parseFloat(yes) + parseFloat(today)) / 2
+        alert("어제와 오늘의 온도의 평균은?  " + aver + "도")
+
+        // yes_temp 뱀표기법 파이썬
+        // yesTemp 낙타표기법 자바
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
