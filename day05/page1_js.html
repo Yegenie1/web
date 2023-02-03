@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pay() { //결제처리 기능 정의
+
+            //1. 입력 - 입력한 값 가지고 오기
+            //2. 처리 - 결제금액 계산해주기
+            //3. 출력 - 결과를 출력
+            payment = document.getElementById('payment').value
+            name = document.getElementById('name').value
+            price = document.getElementById('price').value
+            price2 = parseInt(price)
+
+            if (payment == '2') {
+                price2 = price2 + 1000 //cpu가 price2의 값을 연산
+
+            } else if (payment == '3') {
+                price2 = price2 + 500
+
+            }
+
+            text = name + "에서 <font color=red>" + price2 + "</font>원을 결제수단 " + payment + "번으로 결제했습니다."
+            //특정부분만 색 넣고싶을떄 <font color=red>글자....</font>
+            result_tag = document.getElementById('result')//div
+            result_tag.innerHTML = text
+
+        }
+    </script>
+</head>
+
+<body>
+    <hr color="red">
+    구매상점 : <input type="text" id="name" value="멀티샵"><br>
+    결제금액 : <input type="text" id="price" value="10000"><br>
+    입력수단(1)계좌이체 (2)신용카드 (3)휴대폰 결제<br>
+    <input type="text" id="payment" value="1">
+    <button onclick="pay()">결제버튼</button>
+    <hr color="blue">
+    <div id="result"></div>
+    
+
+</body>
+
+</html>
